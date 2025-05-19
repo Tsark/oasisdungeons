@@ -1,0 +1,18 @@
+name: OasisDungeons
+version: 0.0.1 # This will take the version from pom.xml
+# The main class of your plugin. Make sure this matches the package and class name we create next.
+main: com.hybridiize.oasisDungeons.OasisDungeons
+# The API version your plugin is built against. For 1.21, this will be 1.21.
+api-version: '1.21'
+author: Hybridiize # Replace YourName with your actual name or username
+description: A Dungeon creation plugin made entirely by AI # This will take the description from pom.xml
+# We will add soft dependencies for FAWE and PlaceholderAPI here later
+# softdepend: [FastAsyncWorldEdit, PlaceholderAPI]
+
+commands:
+  odadmin:
+    description: OasisDungeons admin commands.
+    usage: /<command> <subcommand> [args...]
+    aliases: [oasisadmin, dungeonadmin]
+    permission: oasisdungeons.admin
+    permission-message: You do not have permission to use this command.
